@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+    <script>
+        function sideMenu(){
+            var x = document.getElementById("idsidebar");
+            if(x.className.indexOf("w3-show") == -1){  //if w3show [not available = -1]
+                x.className += " w3-show"; //add show 
+            }
+            else{
+                x.className = x.className.replace(" w3-show", ""); //remove show
+            }
+        }
+    </script>
+    <style type="text/css">
+        body{
+            width:1024px;
+            margin: auto;
+        }
+
+        .responsive{
+            width: 100%;
+            height: auto;
+        }
+
+        #activities{
+            column-count: 3;
+            column-gap: 30px;
+            column-rule-style: solid;
+            column-rule-width: 3px;
+            column-rule-color: #ffffcc;
+        }
+
+    </style>
+    
+</head>
+
+<body style="background-color: black;">
+    <div class="w3-bar w3-khaki">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-pale-yellow" >Activities</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-pale-yellow">Skills</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-pale-yellow">Educations</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-pale-yellow">Profile</a>
+        <a href="javascript:void(0)" onclick="sideMenu()" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">&#9776</a>
+    </div>
+
+    <div id="idsidebar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hover-pale-yellow" >Profile</a>
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hover-pale-yellow">Educations</a>
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hover-pale-yellow">Skills</a>
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hover-pale-yellow">Activities</a>
+    </div>
+
+    <header class="w3-header w3-container w3-khaki w3-padding-32 w3-center">
+        <img src="banner.png" class="responsive">    
+    </header>
+
+    <div id="profile" class="w3-container w3-row w3-pale-yellow w3-padding-32">
+        <div class="w3-container w3-third w3-center">
+            <img src="passport_pic.png" style="height: 250px; background-size: cover;" > 
+        </div>
+        <div class="w3-container w3-twothird">
+            <p style="margin: 80px 100px 90px 100px;">Energetic and passionate college student working toward a BS in Information Technology at Universiti Utara Malaysia. Interested in mobile and web development. Bringing forth a positive attitude and willingness to learn new programs.</p>
+        </div>
+    </div>
+
+    <div id="education" class="w3-container w3-row w3-khaki w3-padding-32">
+        <div class="w3-container w3-twothird">
+            <ul>
+                <li><b>Universiti Utara Malaysia</b> - Degree of Information Technology<br>2020 - Present<br>Major in Software Engineering</li>
+                <li><b>Kolej Matrikulasi Kedah</b><br>2019 - 2020<br>Science Stream Module 2</li>
+                <li><b>SMK Sultanah Bahiyah</b><br>2014 - 2018</li>
+            </ul>
+        </div>
+        <div class="w3-container w3-third fa fa-book" style="font-size: 200px;"> 
+        </div>
+    </div>
+
+    <div id="skills" class="w3-container w3-row w3-pale-yellow w3-padding-32">
+        <p class="w3-padding-16 w3-text-black"><b>Technical Skills</b></p>
+        <p class="w3-bold-text w3-text-black">Java</p>
+            <div class="w3-white">
+            <div class="w3-khaki" style="height:28px;width:95%"></div>
+            </div>
+        <p class="w3-bold-text w3-text-black">Microsoft SQL</p>
+            <div class="w3-white">
+            <div class="w3-khaki" style="height:28px;width:85%"></div>
+            </div>
+        <p class="w3-bold-text w3-text-black">HTML</p>
+            <div class="w3-white">
+            <div class="w3-khaki" style="height:28px;width:80%"></div>
+            </div><br>
+    </div>
+
+    <div id="activities" class="w3-container w3-row w3-khaki w3-padding-32">
+        <div>
+                <b>Instructor</b><br><br>Fundamentals of Web Development Workshop - Successfully instructed 356 participants on 21 December 2021 about the introduction to CSS in the workshop organized by GDSC UUM.<br>
+                <p><b>Program Director</b><br><br>Fundamentals of Web Development Workshop - Was responsible to ensure the program was successful by planning and monitoring the committees executing their respective tasks.</p><br>
+                <p><b>Marketing and Publicity Committee</b><br><br>Codemantra with Java Workshop - Handled participant inquiries, ensured number of target participants is achieved, reviewed and analyzed program feedbacks.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p class="w3-center" style="color:white;">Copyright &copy; 2022</p>
+    </footer>
+</body>
+
+</html>
